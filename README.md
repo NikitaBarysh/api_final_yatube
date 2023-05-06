@@ -3,21 +3,38 @@
 API для социальной сети блогеров.
 ### Технологии
 Python, Django, DRF
-### Запуск проекта в dev-режиме
-- Установите и активируйте виртуальное окружение
-- Установите зависимости из файла requirements.txt
+### Как запустить проект:
+
+Клонировать репозиторий и перейти в него в командной строке:
+
+Cоздать и активировать виртуальное окружение:
+
 ```
-python3 -m pip install --upgrade pip pip install -r requirements.txt
-``` 
-- В папке с файлом manage.py выполните миграции:
+python3 -m venv venv
+```
+
+```
+source venv/bin/activate
+```
+
+```
+python3 -m pip install --upgrade pip
+```
+
+Установить зависимости из файла requirements.txt:
+
+```
+pip install -r requirements.txt
+```
+
+Выполнить миграции:
+
 ```
 python3 manage.py migrate
 ```
-- Запустить проект:
+
+Запустить проект:
+
 ```
 python3 manage.py runserver
 ```
-После запуска проекта документацию к API читай в [Redoc](http://127.0.0.1:8000/redoc/)
-
-### Автор
-Евгений Голодных
